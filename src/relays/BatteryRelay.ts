@@ -6,7 +6,7 @@ import { TransmissionError } from "../core/errors/TransmissionError";
 export class BatteryRelay extends Relay {
   private energy: number;
 
-  constructor(initialEnergy: number = 2) {
+  constructor(initialEnergy: number) {
     super("Relé con batería");
     this.energy = initialEnergy;
   }
