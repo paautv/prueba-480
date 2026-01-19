@@ -5,7 +5,7 @@ import { ProcessResult } from "../core/ProcessResult";
 export abstract class Relay implements TelegraphNode {
   constructor(
     public readonly name: string,
-    protected readonly threshold: number = 0.2
+    protected readonly threshold: number = 1
   ) {}
 
   abstract process(signal: Signal): ProcessResult;
